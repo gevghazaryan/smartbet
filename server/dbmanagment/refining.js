@@ -1,11 +1,7 @@
 const Datastore = require('nedb');
+const moment = require('moment');
 
 const db = new Datastore('../db/games.db');
-
-const update = (query) => new Promise((res,rej) => {
-    db.update(query,{$set: {Date: }})
-}) 
-
 
 db.loadDatabase(function(error){
     if(error) {
@@ -18,7 +14,9 @@ db.loadDatabase(function(error){
             console.log(`error while finding`,err)
             return false
         }
-        
+        docs.forEach(function(item,index){
+            
+        })
         console.table(docs[1])
     })
 }) 
