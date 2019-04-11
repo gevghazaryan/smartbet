@@ -1,0 +1,32 @@
+@import './assets/spritesheet/flags/stylesheet.css';
+
+body {
+  font-size: 16px;
+}
+
+.App {
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between
+}
+
+.horizontal {
+  display: flex;
+  list-style-type: none;
+}
+
+.horizontal a {
+  display: block;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.horizontal a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+
